@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1, 
+        "title": "Customer’s Requirements Managed By Help Desk Software.", 
+        "content": "Enable to provide quick and easy answers to help seekers. Makes it simple to organize, prioritize.",
+        "icon": "faLaptop"
+    },
+    {
+        "id": 2, 
+        "title": "Deliver On SLAs", 
+        "content": "Nail your Service Level Agreements, every time. Get the important things done first with prioritized queues.",
+        "icon": "faLaptop"
+    },
+    {
+        "id": 3, 
+        "title": "Offer Self-Service", 
+        "content": "Help customers help themselves, scale support with a limited staff. Save time and reduce tickets with an integrated knowledge base.",
+        "icon": "faLaptop"
+    },
+    {
+        "id": 4, 
+        "title": "Automate Those Repetitive Tasks", 
+        "content": "We always try to set up automations for the routine tasks so that we can focus on solving the important stuff and help lighten the workload.",
+        "icon": "faLaptop"
+    },
+    {
+        "id": 5, 
+        "title": "Customer’s Requirements Tracked And Reported On Metrics", 
+        "content": "We definitely keep an eye on key operational metrics like most IT organizations. But we’ve stopped obsessing over random KPIs, and we’re way more focused now on measuring what matters most. To summarize, we put the customer experience first, and spend our time drilling into the trends and numbers that can help us make the biggest improvements.",
+        "icon": "faLaptop"
+    },
+    {
+        "id": 6, 
+        "title": "Up-To-Date Staff Training", 
+        "content": "CLV helpdesk’s tool is always available with the up to date workaround, training materials, guideline document, FAQ from users… We had a clear plan to make sure all of helpdesk team members could have the easiest way to reach them in the fastest way when they need to.",
+        "icon": "faLaptop"
+    }
+]
