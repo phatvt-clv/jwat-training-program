@@ -1,19 +1,33 @@
-import React from "react";
+import { React, useState } from "react";
 import "./reset.css";
 import "./styles.css";
 import "../script.js";
 import logo from "../assets/logo-CLV.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import toggleMenu from "../script.js";
 
 export default function Header() {
+  // State to control the visibility of the navbar
+  const [navbarVisible, setNavbarVisible] = useState(true);
+
+  // Function to toggle the visibility of the navbar
+  const toggleNavbarVisibility = () => {
+    console.log("phat");
+    setNavbarVisible(!navbarVisible);
+  };
+
   return (
-    <div id="header" className="navbar">
+    <div
+      id="header"
+      className="navbar" 
+      style={{ overflow: navbarVisible ? 'visible' : 'hidden',}}
+    >
       <a className="logo" href="https://www.cyberlogitec.com.vn/">
         <img src={logo} alt="CyberLogitec" />
       </a>
 
-      <ul className="menu-list">
+      <ul id="menuList" className="menu-list">
         <li className="menu-item">
           <a href="#Solutions">
             <span>Solutions</span>
@@ -82,7 +96,7 @@ export default function Header() {
       </ul>
 
       <button className="contact-btn">Contact Us</button>
-      <button className="mobile-menu-btn">
+      <button className="mobile-menu-btn" onClick={toggleNavbarVisibility}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="menu-btn"
