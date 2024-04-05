@@ -7,11 +7,10 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   // State to control the visibility of the navbar
-  const [navbarVisible, setNavbarVisible] = useState(true);
+  const [navbarVisible, setNavbarVisible] = useState(false);
 
   // Function to toggle the visibility of the navbar
   const toggleNavbarVisibility = () => {
-    console.log("phat");
     setNavbarVisible(!navbarVisible);
   };
 
@@ -31,7 +30,7 @@ export default function Header() {
             <span>Solutions</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav">
+          <ul className="subnav" style={{ overflow: navbarVisible ? "display" : "block" }}>
             <li>
               <a href="">Overview</a>
             </li>
@@ -54,7 +53,7 @@ export default function Header() {
             <span>Services</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav">
+          <ul className="subnav" style={{ overflow: navbarVisible ? "display" : "block" }}>
             <li>
               <a href="">Overview</a>
             </li>
@@ -94,12 +93,20 @@ export default function Header() {
       </ul>
 
       <button className="contact-btn">Contact Us</button>
-      <button className="mobile-menu-btn" onClick={toggleNavbarVisibility}>
+      <button
+        id="rotateButton"
+        className="mobile-menu-btn"
+        onClick={toggleNavbarVisibility}
+        style={{
+          overflow: navbarVisible ? "visible" : "hidden",
+          transform: navbarVisible ? "rotate(90deg)" : "none", // Rotate 90 degrees if navbarVisible is true
+          transition: "transform 0.3s ease", // Add transition for smooth rotation
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="menu-btn"
           viewBox="0 0 448 512"
-          style={{ overflow: navbarVisible ? "transform" : "rotate(90deg)" }}
         >
           <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
         </svg>

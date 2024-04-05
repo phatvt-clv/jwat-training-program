@@ -5,7 +5,9 @@
     --color-background-light: #f5f5f5;
     font-family: "Poppins";
 }
-
+.rotated {
+    transform: rotate(90deg); /* Rotate the button 45 degrees */
+}
 
 .navbar {
     display: flex;
@@ -396,6 +398,9 @@
     }
     .navbar button:hover {
         color: transparent;
+    }
+    .navbar li:hover .subnav {
+        display: block;
     }
     .navbar .menu-list {
         position: absolute;
