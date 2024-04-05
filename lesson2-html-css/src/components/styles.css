@@ -59,6 +59,8 @@
     font-size: 14px;
     top: 80%;
     z-index: 2;
+    border: 1px solid white;
+    margin-left: 24px;
 }
 
 .navbar .subnav li a {
@@ -152,7 +154,8 @@
     font-weight: 400;
     font-size: 48px;
     color: var(--color-primary);
-    line-height: 1.2;
+    line-height: 1;
+    margin-top: 0.5rem;
 }
 
 .content-video {
@@ -334,7 +337,7 @@
 
 @media (max-width:1024px) {
     .navbar .logo img {
-        height: 36px;
+        height: 32px;
     }
     .navbar {
         padding: 0 2rem;
@@ -361,6 +364,7 @@
     }
     .navbar li a {
         padding: 0 0.5rem;
+        font-size: 14px;
     }
     .navbar .menu-list .menu-item .icon-down{
         width: 10px;
@@ -372,6 +376,9 @@
     .service-feature .feature-list {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
+    .service-feature .feature-list p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width:768px) {
@@ -380,7 +387,7 @@
     }
     .navbar .menu-list {
         position: absolute;
-        top: 70px;
+        top: 72px;
         left: 0;
         right: 0;
         flex-direction: column-reverse;
@@ -388,14 +395,34 @@
         align-items: flex-start;
         background: var(--color-primary-dark);
         gap: 0;
-        padding: 0 2rem;
+        padding: 0 1rem;
+        padding-top: 48px;
     }
     .navbar .menu-item {
         display: flex;
+        width: 100%;
         height: 3rem;
     }
+    .navbar .menu-item a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+    .navbar .subnav {
+        padding: 0 1.5rem;
+        margin-left: 0;
+        width: 75%;
+    }
     .navbar .contact-btn {
-        display: none;
+        position: absolute;
+        top: 72px;
+        font-size: 14px;
+        width: 48px;
+        background-color: var(--color-primary);
+        color: #ffffff; 
     }
     .navbar .mobile-menu-btn {
         display: flex;
@@ -415,6 +442,73 @@
     }
     .service-feature .feature-item p {
         font-size: 12px;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer .footer-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer .footer-link a {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .footer .footer-social {
+        margin-top: 1rem;
+    }
+    .footer .footer-social svg {
+        height: 32px;
+        margin-right: 0;
+        padding: 0.2rem;
+    }
+    .service-feature .feature-list {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+@media (max-width:480px) {
+    html p {
+        font-size: 12px;
+    }
+    .service-content .section-heading, 
+    .service-content .section-subheading,
+    .service-feature .feature-heading {
+        font-size: 24px;
+    }
+    .service-feature .feature-heading {
+        margin-bottom: 0.5rem;;
+    }
+    .navbar {
+        padding: 0 1rem;
+    }
+    .navbar .menu-item a {
+        padding: 0 0.5rem;
+    }
+    .service-content {
+        padding: 0 1rem 1rem 1rem;
+    }
+    .service-feature {
+        padding: 1rem;
+    }
+    .return {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer {
+        padding: 1rem;
+    }
+    .service-feature .feature-item h3 {
+        font-size: 16px;
+    }
+    .service-feature .feature-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .service-feature .feature-item {
+        height: 400px;
     }
 }
 
