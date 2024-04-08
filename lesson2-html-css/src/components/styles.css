@@ -123,6 +123,17 @@
     width: 20px;
 }
 
+i {
+    width: 32px;
+    height: 32px;
+    color: white;
+    fill: white;
+}
+
+.fa-solid {
+    background-color: white;
+}
+
 .video-responsive {
     /* overflow: hidden; */
     padding-bottom: 56.25%;
@@ -235,6 +246,17 @@
 
 .feature-heading-color {
     color: var(--color-primary);
+}
+
+.feature-item img {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.feature-item .container-icon {
+    display: flex;
+    justify-content: center;
 }
 
 .return {
