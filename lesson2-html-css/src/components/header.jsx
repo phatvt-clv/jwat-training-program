@@ -18,7 +18,7 @@ export default function Header() {
     <div
       id="header"
       className="navbar"
-      style={{ overflow: navbarVisible ? "visible" : "hidden" }}
+      style={{ overflow: !navbarVisible ? "visible" : "hidden" }}
     >
       <a className="logo" href="https://www.cyberlogitec.com.vn/">
         <img src={logo} alt="CyberLogitec" />
@@ -30,7 +30,7 @@ export default function Header() {
             <span>Solutions</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav" style={{ overflow: navbarVisible ? "display" : "block" }}>
+          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block" }}>
             <li>
               <a href="">Overview</a>
             </li>
@@ -53,7 +53,7 @@ export default function Header() {
             <span>Services</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav" style={{ overflow: navbarVisible ? "display" : "block" }}>
+          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block" }}>
             <li>
               <a href="">Overview</a>
             </li>
@@ -99,7 +99,7 @@ export default function Header() {
         onClick={toggleNavbarVisibility}
         style={{
           overflow: navbarVisible ? "visible" : "hidden",
-          transform: navbarVisible ? "rotate(90deg)" : "none", // Rotate 90 degrees if navbarVisible is true
+          transform: !navbarVisible ? "rotate(90deg)" : "none", // Rotate 90 degrees if navbarVisible is true
           transition: "transform 0.3s ease", // Add transition for smooth rotation
         }}
       >
