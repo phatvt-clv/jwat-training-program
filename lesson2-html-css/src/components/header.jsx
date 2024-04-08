@@ -30,7 +30,7 @@ export default function Header() {
             <span>Solutions</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block" }}>
+          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block"}}>
             <li>
               <a href="">Overview</a>
             </li>
@@ -53,7 +53,7 @@ export default function Header() {
             <span>Services</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block" }}>
+          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block"}}>
             <li>
               <a href="">Overview</a>
             </li>
@@ -74,7 +74,7 @@ export default function Header() {
             <span>Careers</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav">
+          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block"}}>
             <li>
               <a href="">Overview</a>
             </li>
