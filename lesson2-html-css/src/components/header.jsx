@@ -1,6 +1,6 @@
 import { React, useState } from "react";
-import "./reset.css";
-import "./styles.css";
+import "../styles/reset.css";
+import "../styles/styles.css";
 import logo from "../assets/logo-CLV.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
