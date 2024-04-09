@@ -1,7 +1,7 @@
 import { React } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import YoutubeEmbed from "../components/yxoutubeEmbed";
+import YoutubeEmbed from "../components/youtubeEmbed";
 import "../styles/responsive.css"
 import Return from "../components/return";
 import Feature from "../components/feature";
