@@ -2,7 +2,7 @@ import { React } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import YoutubeEmbed from "../components/youtubeEmbed";
-import "../styles/responsive.css"
+import "../styles/responsive.css";
 import Return from "../components/return";
 import Feature from "../components/feature";
 
@@ -28,7 +28,7 @@ export default function LandingPage() {
           </p>
         </div>
       </div>
-      
+
       <Feature></Feature>
       <Return></Return>
       <Footer></Footer>
