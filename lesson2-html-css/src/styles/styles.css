@@ -5,12 +5,6 @@
     --color-background-light: #f5f5f5;
     font-family: "Poppins";
 }
-html {
-    overflow: visible;
-}
-.rotated {
-    transform: rotate(90deg); /* Rotate the button 45 degrees */
-}
 
 /*----- HEADER -----*/
 .navbar {
@@ -266,12 +260,12 @@ i {
     justify-content: center;
 }
 
-/*----- RETURN SECTION -----*/
-.return {
+/*----- PAGINATION SECTION -----*/
+.pagination {
     padding: 0 96px 48px 96px;
 }
 
-.return h2 {
+.pagination h2 {
     color: var(--color-primary);
     font-weight: 500;
     font-size: 28px;
@@ -311,4 +305,8 @@ i {
 .footer .footer-link a:hover {
     color: var(--color-primary);
     transition: all 0.5s ease;
+}
+
+.rotated {
+    transform: rotate(90deg); /* Rotate the button 45 degrees */
 }

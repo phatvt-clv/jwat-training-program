@@ -23,28 +23,27 @@ export default function Header() {
       <a className="logo" href="https://www.cyberlogitec.com.vn/">
         <img src={logo} alt="CyberLogitec" />
       </a>
-
       <ul id="menuList" className="menu-list">
         <li className="menu-item">
           <a href="#Solutions">
             <span>Solutions</span>
             <FontAwesomeIcon icon={faChevronDown} className="icon-down" />
           </a>
-          <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block"}}>
+          <ul className="subnav" style={{overflow: !navbarVisible ? "display" : "block"}}>
             <li>
-              <a href="">Overview</a>
+              <a href="#Overview">Overview</a>
             </li>
             <li>
-              <a href="">Forwarding</a>
+              <a href="#Forwarding">Forwarding</a>
             </li>
             <li>
-              <a href="">Container Tracking</a>
+              <a href="#ContainerTracking">Container Tracking</a>
             </li>
             <li>
-              <a href="">Shipping</a>
+              <a href="#Shipping">Shipping</a>
             </li>
             <li>
-              <a href="">Factory</a>
+              <a href="#Factory">Factory</a>
             </li>
           </ul>
         </li>
@@ -55,20 +54,19 @@ export default function Header() {
           </a>
           <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block"}}>
             <li>
-              <a href="">Overview</a>
+              <a href="#Overview">Overview</a>
             </li>
             <li>
-              <a href="">Software Developement</a>
+              <a href="#SoftwareDevelopement">Software Developement</a>
             </li>
             <li>
-              <a href="">Quality Assurance</a>
+              <a href="#QualityAssurance">Quality Assurance</a>
             </li>
             <li>
-              <a href="">Global Service Desk</a>
+              <a href="#GlobalServiceDesk">Global Service Desk</a>
             </li>
           </ul>
         </li>
-
         <li className="menu-item">
           <a href="#Solutions">
             <span>Careers</span>
@@ -76,22 +74,20 @@ export default function Header() {
           </a>
           <ul className="subnav" style={{ overflow: !navbarVisible ? "display" : "block"}}>
             <li>
-              <a href="">Overview</a>
+              <a href="#Overview">Overview</a>
             </li>
             <li>
-              <a href="">Experienced Hire</a>
+              <a href="#ExperiencedHire">Experienced Hire</a>
             </li>
             <li>
-              <a href="">Fresher Training Program</a>
+              <a href="#FresherTrainingProgram">Fresher Training Program</a>
             </li>
           </ul>
         </li>
-
         <li className="menu-item">
           <a href="#Solutions">About Us</a>
         </li>
       </ul>
-
       <button className="contact-btn">Contact Us</button>
       <button
         id="rotateButton"

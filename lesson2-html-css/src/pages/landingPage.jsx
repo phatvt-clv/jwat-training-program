@@ -2,18 +2,18 @@ import { React } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import YoutubeEmbed from "../components/youtubeEmbed";
-import "../styles/responsive.css";
-import Return from "../components/return";
+import "../styles/responsive.css"
+import Return from "../components/pagination";
 import Feature from "../components/feature";
 
 export default function LandingPage() {
   return (
     <div id="LandingPage">
-      <Header></Header>
+      <Header />
 
       <div className="service-content">
         <div className="content-video">
-          <YoutubeEmbed embedId="lkfI3cpjsII" />
+          <YoutubeEmbed embedId="lkfI3cpjsII"/>
         </div>
         <div className="content-section">
           <h2 className="section-heading">Create a Global Support Hub with</h2>
@@ -28,10 +28,10 @@ export default function LandingPage() {
           </p>
         </div>
       </div>
-
-      <Feature></Feature>
-      <Return></Return>
-      <Footer></Footer>
+      
+      <Feature />
+      <Return />
+      <Footer />
     </div>
   );
 }
