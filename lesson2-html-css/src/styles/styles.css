@@ -26,6 +26,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    width: 110px;
 }
 
 .navbar li a {
@@ -99,6 +100,13 @@
     font-size: 14px;
 }
 
+.navbar .contact-btn:hover {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
 .navbar .mobile-menu-btn {
     height: 40px;
     width: 40px;
@@ -110,27 +118,14 @@
     text-align: center;
 }
 
-.navbar button:hover {
-    background-color: var(--color-primary);
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.5s ease;
+.navbar .mobile-menu-btn:hover {
+    background-color: #384151;
+    border-radius: 20%;
 }
 
-.menu-btn {
+.navbar .mobile-menu-btn svg {
     fill: white;
     width: 20px;
-}
-
-i {
-    width: 32px;
-    height: 32px;
-    color: white;
-    fill: white;
-}
-
-.fa-solid {
-    background-color: white;
 }
 
 /*----- YOUTUBE EBEDDED -----*/
@@ -185,7 +180,7 @@ i {
 .content-section .section-text {
     font-size: 18px;
     line-height: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
 }
 
 .service-feature {

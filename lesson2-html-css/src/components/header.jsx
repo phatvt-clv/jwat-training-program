@@ -7,18 +7,27 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   // State to control the visibility of the navbar
-  const [navbarVisible, setNavbarVisible] = useState(false);
+  const [navbarVisible, setNavbarVisible] = useState(true);
 
   // Function to toggle the visibility of the navbar
   const toggleNavbarVisibility = () => {
-    setNavbarVisible(!navbarVisible);
+      setNavbarVisible(!navbarVisible);
   };
+
+  const setDefaultNavbarVisibility = () => {
+    if (window.innerWidth > 768) 
+      setNavbarVisible(true);
+    else
+      setNavbarVisible(false);
+  }
+  
+  window.addEventListener('resize', setDefaultNavbarVisibility);
 
   return (
     <div
       id="header"
       className="navbar"
-      style={{ overflow: !navbarVisible ? "visible" : "hidden" }}
+      style={{ overflow: navbarVisible ? "visible" : "hidden" }}
     >
       <a className="logo" href="https://www.cyberlogitec.com.vn/">
         <img src={logo} alt="CyberLogitec" />
@@ -95,7 +104,7 @@ export default function Header() {
         onClick={toggleNavbarVisibility}
         style={{
           overflow: navbarVisible ? "visible" : "hidden",
-          transform: !navbarVisible ? "rotate(90deg)" : "none", // Rotate 90 degrees if navbarVisible is true
+          transform: navbarVisible ? "rotate(90deg)" : "none", // Rotate 90 degrees if navbarVisible is true
           transition: "transform 0.3s ease", // Add transition for smooth rotation
         }}
       >
