@@ -1,8 +1,8 @@
 import { React } from "react";
+import "../styles/responsive.css"
 import Header from "../components/header";
 import Footer from "../components/footer";
 import YoutubeEmbed from "../components/youtube";
-import "../styles/responsive.css"
 import Return from "../components/pagination";
 import Feature from "../components/feature";
 
@@ -10,7 +10,6 @@ export default function LandingPage() {
   return (
     <div id="LandingPage">
       <Header />
-
       <div className="service-content">
         <div className="content-video">
           <YoutubeEmbed embedId="lkfI3cpjsII"/>
@@ -28,7 +27,6 @@ export default function LandingPage() {
           </p>
         </div>
       </div>
-      
       <Feature />
       <Return />
       <Footer />
